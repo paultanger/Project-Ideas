@@ -1,0 +1,1 @@
+# This is a repo to store project ideas which if pursued will move into their own repo
