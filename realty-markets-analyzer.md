@@ -14,10 +14,13 @@ This project seeks to address that gap.
 ## Table of Contents
 
 * [Background](#background)
-* [Data Sources](#data-sources)
+* [Data sources](#data-sources)
 * [EDA and visualization](#EDA-and-visualization)
-* [Project Plan](#project-plan)
+* [Project plan](#project-plan)
 * [MVP (minimum viable product)](#mvp-minimum-viable-product)
+* [End User and applications](#end-user-and-applications)
+* [Risk management](#risk-management)
+* [Skills](#skills)
 * [Future plans](#future-plans)
 
 ## Background
