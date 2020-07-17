@@ -34,10 +34,10 @@ Essential data:
 
 | Data                | Source                              | Purpose    | Details
 | :----------------   | :---                                | :---       | :---
-| House prices and rent prices      | https://www.zillow.com/research/data/ | with rent prices, can determine ratios | TBA
-| New construction                   | https://www.census.gov/construction/nrc/index.html | While prices are lagging indicator, this should be a leading indicator | only high level data :( maybe this is better: https://www.census.gov/construction/bps/msaannual.html
-| Rental Vacancy rates (Table 4)     | https://www.census.gov/housing/hvs/data/rates.html | could be a proxy for rent prices which is hard to find | this is 75 largest metro areas
-| sub-county population estimates    | https://www.census.gov/data/tables/time-series/demo/popest/2010s-total-cities-and-towns.html#ds                                                      | population trends will indicate future rent demand | TBA
+| House prices and rent prices      | [Zillow](https://www.zillow.com/research/data/) | with rent prices, can determine ratios | TBA
+| New construction                  | [Census data](https://www.census.gov/construction/nrc/index.html) | While prices are lagging indicator, this should be a leading indicator | only high level data :( maybe this is better: [Census surveys](https://www.census.gov/construction/bps/msaannual.html)
+| Rental Vacancy rates (Table 4)     | [more Census](https://www.census.gov/housing/hvs/data/rates.html) | could be a proxy for rent prices which is hard to find | this is 75 largest metro areas
+| sub-county population estimates    | [Census pop data](https://www.census.gov/data/tables/time-series/demo/popest/2010s-total-cities-and-towns.html#ds)   | population trends will indicate future rent demand | TBA
 
 Data that will be useful for modeling down the road as additional factors:
 
