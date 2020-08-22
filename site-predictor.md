@@ -58,7 +58,7 @@ https://www.kaggle.com/c/plant-pathology-2020-fgvc7/data
 https://www.kaggle.com/fpeccia/weed-detection-in-soybean-crops
 
 4. using neural networks to detect ships
-* using this kaggle dataset, train some CNNs to predict images with ships in them
+using this kaggle dataset, train some CNNs to predict images with ships in them
 https://www.kaggle.com/rhammell/ships-in-satellite-imagery
 
 ## Table of Contents
