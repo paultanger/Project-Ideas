@@ -11,6 +11,7 @@ http://ioverlander.com/countries/places_by_country
 
 'Hammer site. Lots of places for vehicle or tent camping with good views.\n\nThree pools, the one in the center can be somewhat adjusted temperature wise.\n\nRoads leading to it are 2wd dirt roads and should be easy unless wet.'
 
+```
 #   Column                     Non-Null Count  Dtype  
 ---  ------                     --------------  -----  
  0   Location                   1413 non-null   object 
@@ -49,7 +50,7 @@ http://ioverlander.com/countries/places_by_country
  33  Electric vehicle charging  21 non-null     object 
  34  Composting sawdust         21 non-null     object 
  35  Recycling center           21 non-null     object
-
+```
 2. plant disease image detection
 https://www.kaggle.com/c/plant-pathology-2020-fgvc7/data
 
