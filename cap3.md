@@ -17,23 +17,36 @@
 * Examine F1 scores
 * More dropouts in model
 
-2. transcribed farmer reported issues in India to be combined with other modeling approaches to detect new issues based on what they are talking about. 5 million records for the period 2009-2020. 
+To prioritize the above, I assigned each a value rank and difficulty rank (10 is high value and high difficulty):
 
-The data looks like this:
+![images/phase2_priorities](images/phase2_priorities.png)
 
-|   Season | Sector       | Category   | Crop                                              | QueryType        | QueryText                                                                     |   KccAns | StateName     | DistrictName   | BlockName     | CreatedOn               |
-|---------:|:-------------|:-----------|:--------------------------------------------------|:-----------------|:------------------------------------------------------------------------------|---------:|:--------------|:---------------|:--------------|:------------------------|
-|      nan | AGRICULTURE  | Cereals    | Paddy (Dhan)                                      | Weather          | Information about weather forecast of Distrect-Etah in Block- Shitalpur.....? |      nan | UTTAR PRADESH | ETAH           | SHITALPUR     | 2019-10-01T06:13:39.82  |
-|      nan | HORTICULTURE | Vegetables | Cabbage                                           | Plant Protection | Plant protection measures insect control in cabbage crop ?                    |      nan | UTTAR PRADESH | ETAH           | ALIGANJ       | 2019-10-01T06:14:00.29  |
-|      nan | AGRICULTURE  | Others     | Others                                            | Weather          | Information about weather forecast of Block jalesar  in District etah ?       |      nan | UTTAR PRADESH | ETAH           | AWAGARH       | 2019-10-01T06:43:00.063 |
-|      nan | AGRICULTURE  | Cereals    | Paddy (Dhan)                                      | Plant Protection | dhan me brawon plant hopper laga hai ?                                        |      nan | UTTAR PRADESH | ETAH           | AWAGARH       | 2019-10-01T06:46:36.063 |
-|      nan | AGRICULTURE  | Others     | Others                                            | Weather          | Information about weather forecast of Block   Aliganj  in District  Etah   ?  |      nan | UTTAR PRADESH | ETAH           | ALIGANJ       | 2019-10-01T06:47:58.947 |
-|      nan | AGRICULTURE  | Others     | Others                                            | Weather          | Please give me information for weather to district -etah..?                   |      nan | UTTAR PRADESH | ETAH           | ALIGANJ       | 2019-10-01T06:50:10.13  |
-|      nan | AGRICULTURE  | Others     | Others                                            | Weather          | Information about weather forecast of Block Jaithra in District Etah....?     |      nan | UTTAR PRADESH | ETAH           | JAITHARA      | 2019-10-01T06:54:03.663 |
-|      nan | AGRICULTURE  | Others     | Others                                            | Weather          | TELL ME ABOUT WEATHER INFORMATION ?                                           |      nan | UTTAR PRADESH | ETAH           | GANJ DUNDWARA | 2019-10-01T07:35:07.143 |
-|      nan | AGRICULTURE  | Others     | 0                                                 | Weather          | Information about weather forecast of Block soron in District etah?           |      nan | UTTAR PRADESH | ETAH           | SORON         | 2019-10-01T07:35:10.047 |
-|      nan | AGRICULTURE  | Millets    | Pearl Millet (Bajra/Bulrush Millet/Spiked Millet) | Plant Protection | Control of stem borer in pearl millet crop...?                                |      nan | UTTAR PRADESH | ETAH           | SORON         | 2019-10-01T07:38:04.237 |
+In more detail these potential tasks and an idea of my timeline are:
 
-3. plant disease image detection
-https://www.kaggle.com/c/plant-pathology-2020-fgvc7/data
+| task                                           | detail                         | notes                                      | to do          |   difficulty (10=hard) |   value (10=valuable) |
+|:-----------------------------------------------|:-------------------------------|:-------------------------------------------|:---------------|-----------------------:|----------------------:|
+| pull more images                               | more data more diversity       | setup colab to run it                      | yes Sunday     |                      3 |                     8 |
+| pull info deleted / closed                     | examine viability of this data |                                            | yes Sunday     |                      4 |                     5 |
+| sobel transformation                           | improve model?                 | write function                             | yes Monday     |                      5 |                     3 |
+| transfer learning models                       | improve model?                 |                                            | eval if needed |                      7 |                     5 |
+| object detection                               | new feature                    | chapter 14..  489 485… YOLO..  Look once.. | maybe          |                      9 |                     9 |
+| multiclassification                            | include other cols like binary |                                            | yes Tuesday    |                      4 |                     7 |
+| implement class weights                        | improve model?                 |                                            | eval if needed |                      4 |                     6 |
+| NLP with higher level tokens than words        | improve model?                 |                                            | maybe          |                      6 |                     6 |
+| specific camp and not camp images              | new feature                    |                                            | maybe          |                      8 |                     4 |
+| Utilize NLP topics to aid image classification | new feature                    |                                            | yes Monday     |                      8 |                     7 |
+| moderator review app                           | new feature                    |                                            | yes Wednesday  |                      6 |                     9 |
 
+Based on this assessment, MVP for the week is:
+* pipeline to clean sat images (sobel or not)
+* assessment of multiclass feasibility
+* moderator app
+* NLP for classification of images and moderation
+
+MVP +:
+* transfer learning, possibly including object detection
+* assessment of deleted / closed predictions
+
+MVP ++:
+* ability to distinquish camp / not camp
+* GPS coordinates of best prediction of camp location
